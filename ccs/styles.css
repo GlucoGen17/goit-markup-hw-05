@@ -670,6 +670,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   border-radius: 4px;
   color: var(--primary-text-color);
   border-color: transparent;
+ 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   padding: 6px 22px;
 }
@@ -710,7 +715,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   margin-left: 30px;
 }
 
-.projects-item:hover .projects-thumb-open {
+.projects-item:hover .projects-thumb-open,
+.projects-item:focus .projects-thumb-open {
   transform: translateY(0);
 }
 
